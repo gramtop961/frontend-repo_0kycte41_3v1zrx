@@ -1,11 +1,12 @@
-import Spline from '@splinetool/react-spline'
 import { ArrowRight, ShieldCheck, Zap, LineChart } from 'lucide-react'
+import LaserFlow from './LaserFlow'
 
 function Hero() {
   return (
     <section className="relative min-h-[92vh] overflow-hidden">
+      {/* LaserFlow background */}
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/vi0ijCQQJTRFc8LA/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <LaserFlow color="#FF79C6" />
       </div>
 
       {/* Gradient overlays for readability */}
